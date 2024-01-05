@@ -35,7 +35,7 @@ function displayCSV(csvData) {
             if (j === 1 && i > 0) { // 2列目でかつ1行目以外の場合
                 var link = document.createElement('a'); // a要素を作成
                 link.href = cells[j]; // リンク先をセット
-                link.textContent = cells[j]; // テキストをセット
+                link.textContent = cells[j - 1]; // テキストをセット
                 cell.appendChild(link); // セルにリンクを追加
             } else {
                 cell.textContent = cells[j]; // 通常のセルにCSVデータを挿入
